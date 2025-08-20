@@ -29,6 +29,8 @@ macro_rules! go_extra {
 }
 
 mod blanket;
+#[cfg(feature = "bstr")]
+mod bstr;
 #[cfg(feature = "unstable")]
 pub mod cache;
 pub mod combinator;

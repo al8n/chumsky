@@ -60,6 +60,9 @@ serde = ["dep:serde"]
 # Enable support for using Tokio's byte slices as inputs
 bytes = ["dep:bytes"]
 
+# Enable support for using bstr as inputs
+bstr = ["dep:bstr"]
+
 # Enable dependencies only needed for generation of documentation on docs.rs
 docsrs = []
 
@@ -83,6 +86,7 @@ serde = { version = "1.0", default-features = false, optional = true, features =
 unicode-ident =  "1.0.10"
 unicode-segmentation = "1"
 bytes = { version = "1", default-features = false, optional = true }
+bstr = { version = "1", default-features = false, optional = true }
 
 [dev-dependencies]
 ariadne = "0.5"
